@@ -1,3 +1,4 @@
+from __future__ import annotations
 from pathlib import Path
 #!/usr/bin/env python3
 """VQE I2 — MEI-RIT v2.1
@@ -13,7 +14,6 @@ Pipeline:
 No es un QPU. Es E3 de simulacion clasica del algoritmo VQE.
 No calcula Maxwell ni el empuje del propulsor.
 """
-from __future__ import annotations
 
 import json
 import time
