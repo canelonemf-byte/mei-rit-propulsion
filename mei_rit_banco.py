@@ -10,7 +10,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-OUT = Path("/home/workdir/artifacts")
+OUT = (Path(__file__).resolve().parent / "artifacts")
 F = 13.56e6
 W = 2.0 * math.pi * F
 L_H = 848.15e-9

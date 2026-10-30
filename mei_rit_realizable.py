@@ -10,7 +10,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-OUT = Path("/home/workdir/artifacts")
+OUT = (Path(__file__).resolve().parent / "artifacts")
 Q = 1.602176634e-19
 U = 1.66053906660e-27
 R_U = 8.314462618

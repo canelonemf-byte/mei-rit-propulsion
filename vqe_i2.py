@@ -1,3 +1,4 @@
+from pathlib import Path
 #!/usr/bin/env python3
 """VQE I2 — MEI-RIT v2.1
 
@@ -615,7 +616,7 @@ if __name__ == "__main__":
         print(json.dumps(dump_hamiltonian(args.r), indent=2))
     elif args.scan:
         out = dissociation_scan()
-        with open("/home/workdir/artifacts/vqe_i2_scan.json", "w") as f:
+        with open(str(Path(__file__).resolve().parent / "artifacts" / "vqe_i2_scan.json"), "w") as f:
             json.dump(out, f, indent=2)
         print(json.dumps({k: out[k] for k in out if k != "puntos"}, indent=2))
         print("wrote artifacts/vqe_i2_scan.json")
