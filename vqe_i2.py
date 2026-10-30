@@ -1,6 +1,5 @@
 from __future__ import annotations
 from pathlib import Path
-#!/usr/bin/env python3
 """VQE I2 — MEI-RIT v2.1
 
 Pipeline:
